@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img 
-              src="public\logo-laranja-preto.png" 
+              src="https://www.vexiostudio.com.br/logo-laranja-preto.png" 
               alt="Vexio Studio" 
               className="h-8 w-auto"
             />
