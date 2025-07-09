@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="text-center">
           <div className="flex items-center justify-center mb-4">
             <img 
-              src="/lovable-uploads/ee0db443-7bc1-4e8d-ae2a-95012420d1e6.png" 
+              src="https://www.vexiostudio.com.br/logo-laranja-preto.png" 
               alt="Vexio Studio" 
               className="h-8 w-auto brightness-0 invert"
             />
