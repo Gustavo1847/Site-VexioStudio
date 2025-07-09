@@ -6,36 +6,40 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 const PricingSection = () => {
   const plans = [
     {
-      name: "Starter",
+      name: "Básico",
       price: "300",
-      description: "Ideal para clínicas pequenas",
+      description: "Automação prática e Econômica.",
       features: [
+        "Ideal até 2 profissionais",
         "IA no WhatsApp 24/7",
-        "Até 500 mensagens/mês",
+        "Até 3.000 mensagens/mês",
+        "Integração com Google Agenda",
         "Agendamento automático",
-        "Confirmação de consultas",
-        "Suporte por WhatsApp"
+        "Fluxo personalizado",
+        "Suporte por mensagem"
       ],
       isPopular: false
     },
     {
-      name: "Professional",
+      name: "Profissional",
       price: "600",
-      description: "Para clínicas em crescimento",
+      description: "Integrações avançadas e Atendimento otimizado.",
       features: [
         "Tudo do plano Starter",
-        "Até 2000 mensagens/mês",
-        "Integração Google Agenda",
-        "Relatórios detalhados",
+        "Até 10.000 mensagens/mês",
+        "Integração com Google Agenda e outros sistemas via API",
+        "Relatórios mensais*",
+        "Automação de Instagram*",
+        "Consultoria mensal para otimização",
         "Sistema de gestão básico",
-        "Suporte prioritário"
+        "Suporte prioritário com especialista dedicado"
       ],
       isPopular: true
     },
     {
       name: "Enterprise",
       price: "Sob consulta",
-      description: "Solução completa personalizada",
+      description: "Solução completa e personalizada",
       features: [
         "Mensagens ilimitadas",
         "ERP completo para clínicas",
