@@ -1,4 +1,3 @@
-
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -20,7 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/ee0db443-7bc1-4e8d-ae2a-95012420d1e6.png" 
+              src="public\logo-laranja-preto.png" 
               alt="Vexio Studio" 
               className="h-8 w-auto"
             />
@@ -64,7 +63,7 @@ const Header = () => {
             onClick={() => window.open('https://wa.me/5583993536617', '_blank')}
             className="hidden md:inline-flex bg-vexio-orange hover:bg-vexio-orange-dark text-white"
           >
-            Falar com IA
+            Testar Agora
           </Button>
 
           {/* Mobile Menu Button */}
@@ -114,7 +113,7 @@ const Header = () => {
                 onClick={() => window.open('https://wa.me/5583993536617', '_blank')}
                 className="bg-vexio-orange hover:bg-vexio-orange-dark text-white w-full"
               >
-                Falar com IA
+                Testar Agora
               </Button>
             </div>
           </nav>

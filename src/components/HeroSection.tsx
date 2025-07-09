@@ -26,7 +26,7 @@ const HeroSection = () => {
                   className="bg-vexio-orange hover:bg-vexio-orange-dark text-white px-8 py-4 text-lg font-semibold group"
                 >
                   <Bot className="mr-2 h-5 w-5" />
-                  Falar com nossa IA
+                  Testar Agora
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 
