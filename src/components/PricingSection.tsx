@@ -120,7 +120,7 @@ const PricingSection = () => {
             ✅ Setup gratuito • ✅ Suporte completo • ✅ Sem fidelidade
           </p>
           <p className="text-sm text-gray-500">
-            Todos os planos incluem 7 dias de teste grátis
+            **Todos os planos incluem implementação e treinamento inicial para sua equipe.
           </p>
         </div>
       </div>
