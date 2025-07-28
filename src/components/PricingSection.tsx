@@ -1,5 +1,5 @@
 
-import { Check, Zap } from "lucide-react";
+import { Check, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
@@ -28,10 +28,11 @@ const PricingSection = () => {
         "Tudo do plano Starter",
         "Até 10.000 mensagens/mês",
         "Integração com Google Agenda e outros sistemas via API",
+        "Site institucional",
         "Relatórios mensais*",
         "Automação de Instagram*",
         "Consultoria mensal para otimização",
-        "Sistema de gestão básico",
+        "Backup de mensagens",
         "Suporte prioritário com especialista dedicado"
       ],
       isPopular: true
@@ -42,9 +43,8 @@ const PricingSection = () => {
       description: "Solução completa e personalizada",
       features: [
         "Mensagens ilimitadas",
-        "ERP completo para clínicas",
+        "ERP completo para clínicas*",
         "Integrações personalizadas",
-        "Site institucional incluso",
         "Múltiplas unidades",
         "Suporte dedicado 24/7"
       ],
@@ -70,7 +70,7 @@ const PricingSection = () => {
               {plan.isPopular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-vexio-orange text-white px-6 py-2 rounded-full text-sm font-semibold flex items-center">
-                    <Zap className="h-4 w-4 mr-1" />
+                    <DollarSign className="h-4 w-4 mr-1" />
                     Mais Popular
                   </div>
                 </div>

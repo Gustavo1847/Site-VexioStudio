@@ -5,9 +5,16 @@ import { Card, CardContent } from "@/components/ui/card";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Dr. Carlos Silva",
+      name: "Dr. Laudenice Lucena",
       role: "Clínica Odontológica",
       content: "A IA da Vexio revolucionou nosso atendimento. Reduzimos 70% das faltas e aumentamos 200% os agendamentos pelo WhatsApp.",
+      rating: 5,
+      image: "./public/DraLaudenice.jpeg"
+    },
+    {
+      name: "Dr. Roberto Lima",
+      role: "Clínica Médica",
+      content: "O sistema da Vexio é muito intuitivo e o suporte é excepcional. Nossa receita aumentou 40% após a implementação.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&h=100&fit=crop&crop=face"
     },
@@ -17,13 +24,6 @@ const TestimonialsSection = () => {
       content: "Incrível como a automação nos deu mais tempo para focar no que realmente importa: nossos pacientes. Recomendo totalmente!",
       rating: 5,
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      name: "Dr. Roberto Lima",
-      role: "Clínica Médica",
-      content: "O sistema da Vexio é muito intuitivo e o suporte é excepcional. Nossa receita aumentou 40% após a implementação.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=100&h=100&fit=crop&crop=face"
     }
   ];
 
@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
                   <img 
                     src={testimonial.image} 
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-4 object-cover"
+                    className="w-12 h-12 rounded-full mr-4 object-top object-cover"
                   />
                   <div>
                     <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>

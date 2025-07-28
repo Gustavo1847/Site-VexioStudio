@@ -1,5 +1,5 @@
 
-import { Bot, Calendar, Monitor, Zap } from "lucide-react";
+import { Bot, Calendar, Activity, Globe } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const ServicesSection = () => {
@@ -11,13 +11,13 @@ const ServicesSection = () => {
       features: ["Agendamento automático", "Confirmação de consultas", "Respostas personalizadas", "Integração total"]
     },
     {
-      icon: Monitor,
-      title: "Sistemas Personalizados",
-      description: "ERP completo para clínicas com gestão de pacientes, financeiro e agenda",
-      features: ["Gestão de pacientes", "Controle financeiro", "Relatórios detalhados", "Interface intuitiva"]
+      icon: Activity,
+      title: "Consultoria em Automação",
+      description: "Ajuda especializada para clínicas otimizarem seus processos com IA e integrações",
+      features: ["Mapeamento de processos", "Planejamento de fluxos automatizados", "Configuração de ferramentas existentes"]
     },
     {
-      icon: Zap,
+      icon: Globe,
       title: "Sites e Landing Pages",
       description: "Sites institucionais e páginas otimizadas para converter mais pacientes",
       features: ["Design responsivo", "SEO otimizado", "Carregamento rápido", "Integração com WhatsApp"]
