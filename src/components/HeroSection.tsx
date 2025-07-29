@@ -22,7 +22,7 @@ const HeroSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg"
-                  onClick={() => window.open('https://wa.me/5583993536617', '_blank')}
+                  onClick={() => window.open('https://wa.me/5583982210377', '_blank')}
                   className="bg-vexio-orange hover:bg-vexio-orange-dark text-white px-8 py-4 text-lg font-semibold group"
                 >
                   <Bot className="mr-2 h-5 w-5" />

@@ -67,7 +67,7 @@ const BenefitsSection = () => {
               Junte-se a centenas de clínicas que já automatizaram seu atendimento e aumentaram sua receita
             </p>
             <button 
-              onClick={() => window.open('https://wa.me/5583993536617', '_blank')}
+              onClick={() => window.open('https://wa.me/5583982210377', '_blank')}
               className="bg-white text-vexio-orange px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-50 transition-colors inline-flex items-center"
             >
               Começar agora

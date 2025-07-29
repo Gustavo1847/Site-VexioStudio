@@ -21,9 +21,9 @@ const ContactSection = () => {
                   <MessageCircle className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
-                <p className="text-gray-600 mb-4">(83) 99353-6617</p>
+                <p className="text-gray-600 mb-4">(83) 98221-0377</p>
                 <Button 
-                  onClick={() => window.open('https://wa.me/5583993536617', '_blank')}
+                  onClick={() => window.open('https://wa.me/5583982210377', '_blank')}
                   className="bg-green-500 hover:bg-green-600 text-white"
                 >
                   Chamar agora
@@ -35,9 +35,9 @@ const ContactSection = () => {
                   <Instagram className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Instagram</h3>
-                <p className="text-gray-600 mb-4">@vexiostudio</p>
+                <p className="text-gray-600 mb-4">@studiovexio</p>
                 <Button 
-                  onClick={() => window.open('https://instagram.com/vexiostudio', '_blank')}
+                  onClick={() => window.open('https://instagram.com/studiovexio', '_blank')}
                   variant="outline"
                   className="border-vexio-orange text-vexio-orange hover:bg-vexio-orange hover:text-white"
                 >
@@ -65,7 +65,7 @@ const ContactSection = () => {
           <div className="text-center">
             <Button 
               size="lg"
-              onClick={() => window.open('https://wa.me/5583993536617', '_blank')}
+              onClick={() => window.open('https://wa.me/5583982210377', '_blank')}
               className="bg-white text-vexio-orange hover:bg-gray-50 px-12 py-4 text-xl font-bold shadow-xl"
             >
               <Bot className="mr-3 h-6 w-6" />

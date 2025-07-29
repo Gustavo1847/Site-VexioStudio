@@ -19,8 +19,8 @@ const Footer = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-sm text-gray-400 mb-8">
-            <div>WhatsApp: (83) 99353-6617</div>
-            <div>Instagram: @vexiostudio</div>
+            <div>WhatsApp: (83) 98221-0377</div>
+            <div>Instagram: @studiovexio</div>
             <div>E-mail: contato@vexiostudio.com.br</div>
           </div>
 

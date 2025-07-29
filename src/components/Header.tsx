@@ -60,7 +60,7 @@ const Header = () => {
           </nav>
 
           <Button 
-            onClick={() => window.open('https://wa.me/5583993536617', '_blank')}
+            onClick={() => window.open('https://wa.me/5583982210377', '_blank')}
             className="hidden md:inline-flex bg-vexio-orange hover:bg-vexio-orange-dark text-white"
           >
             Testar Agora
@@ -110,7 +110,7 @@ const Header = () => {
                 Contato
               </button>
               <Button 
-                onClick={() => window.open('https://wa.me/5583993536617', '_blank')}
+                onClick={() => window.open('https://wa.me/5583982210377', '_blank')}
                 className="bg-vexio-orange hover:bg-vexio-orange-dark text-white w-full"
               >
                 Testar Agora

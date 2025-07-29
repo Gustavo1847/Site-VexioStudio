@@ -102,7 +102,7 @@ const PricingSection = () => {
                 </ul>
                 
                 <Button 
-                  onClick={() => window.open('https://wa.me/5583993536617', '_blank')}
+                  onClick={() => window.open('https://wa.me/5583982210377', '_blank')}
                   className={`w-full py-3 ${plan.isPopular 
                     ? 'bg-vexio-orange hover:bg-vexio-orange-dark text-white' 
                     : 'bg-gray-900 hover:bg-gray-800 text-white'
