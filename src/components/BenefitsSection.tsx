@@ -68,7 +68,7 @@ const BenefitsSection = () => {
               Junte-se a centenas de clínicas que já automatizaram seu atendimento e aumentaram sua receita
             </p>
             <button 
-              onClick={() => window.open('https://wa.me/5583982210377', '_blank')}
+              onClick={() => window.open('https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20e%20quero%20ver%20minha%20empresa%20crescer%20com%20IA%21', '_blank')}
               className="bg-white text-vexio-orange px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-50 transition-colors inline-flex items-center"
             >
               Começar agora

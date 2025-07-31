@@ -3,6 +3,7 @@
 import { Check, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { link } from "fs";
 
 const PricingSection = () => {
   const plans = [
@@ -10,6 +11,7 @@ const PricingSection = () => {
       name: "Básico",
       price: "300",
       description: "Automação prática e Econômica.",
+      link: "https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20B%C3%A1sico.",
       features: [
         "Ideal até 2 profissionais",
         "IA no WhatsApp 24/7",
@@ -25,6 +27,7 @@ const PricingSection = () => {
       name: "Profissional",
       price: "600",
       description: "Integrações avançadas e Atendimento otimizado.",
+      link: "https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Profissional.",
       features: [
         "Tudo do plano Starter",
         "Até 10.000 mensagens/mês",
@@ -42,6 +45,7 @@ const PricingSection = () => {
       name: "Enterprise",
       price: "Sob consulta",
       description: "Solução completa e personalizada",
+      link: "https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Enterprise.",
       features: [
         "Mensagens ilimitadas",
         "ERP completo para clínicas*",
@@ -103,7 +107,7 @@ const PricingSection = () => {
                 </ul>
                 
                 <Button 
-                  onClick={() => window.open('https://wa.me/5583982210377', '_blank')}
+                  onClick={() => window.open(plan.link, '_blank')}
                   className={`w-full py-3 ${plan.isPopular 
                     ? 'bg-vexio-orange hover:bg-vexio-orange-dark text-white' 
                     : 'bg-gray-900 hover:bg-gray-800 text-white'

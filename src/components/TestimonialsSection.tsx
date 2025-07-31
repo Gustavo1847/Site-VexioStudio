@@ -10,7 +10,7 @@ const TestimonialsSection = () => {
       role: "Clínica Odontológica",
       content: "A IA da Vexio revolucionou nosso atendimento. Reduzimos 70% das faltas e aumentamos 200% os agendamentos pelo WhatsApp.",
       rating: 5,
-      image: "./public/DraLaudenice.jpeg"
+      image: "/DraLaudenice.jpeg"
     },
     {
       name: "Dr. Roberto Lima",
