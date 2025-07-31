@@ -1,3 +1,4 @@
+/** 02 */
 
 import { Bot, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
