@@ -31,9 +31,15 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-gray-700 hover:text-vexio-orange transition-colors"
+              className="text-gray-700 font-semibold hover:text-vexio-orange transition-colors"
             >
               Início
+            </button>
+            <button 
+              onClick={() => window.open("https://chatvexio.vexiostudio.com.br", "_blank")}
+              className="text-vexio-orange font-semibold hover:text-gray-700 transition-colors"
+            >
+              ChatVexio
             </button>
             <button 
               onClick={() => scrollToSection('services')}

@@ -15,7 +15,22 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
 
-    <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js"></script>
+    <link rel="icon" href="/favicon.ico" type="image/ico" />
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://chat.vexio.app.br";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'qj5Yit4tDVCpgTzSiW87MBUh',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
   </head>
   <body>
     <div id="root">

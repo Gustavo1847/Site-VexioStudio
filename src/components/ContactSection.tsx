@@ -73,7 +73,7 @@ const ContactSection = () => {
               Falar com nossa IA agora
             </Button>
             <p className="text-orange-100 mt-4">
-              Resposta em menos de 1 minuto • Orçamento gratuito
+              Resposta em menos de 1 minuto • Orçamento 100% gratuito
             </p>
           </div>
         </div>
