@@ -1,8 +1,23 @@
 /** 04 */
 
+
+import { useRef } from "react";
 import { Clock, TrendingUp, Users, Shield } from "lucide-react";
+import { useGsapFadeIn, useGsapStaggerFadeIn } from "@/hooks/useGsapAnimations";
 
 const BenefitsSection = () => {
+  // Refs para animação
+  const sectionRef = useRef<HTMLElement>(null);
+  const cardRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
+  const ctaRef = useRef<HTMLDivElement>(null);
+
+  // Fade-in na section
+  useGsapFadeIn(sectionRef, { duration: 1, delay: 0.1 });
+  // Stagger nos cards de benefício
+  useGsapStaggerFadeIn(cardRefs, { duration: 0.7, delay: 0.3 });
+  // Fade-in no CTA final
+  useGsapFadeIn(ctaRef, { duration: 1, delay: 0.7 });
+
   const benefits = [
     {
       icon: Clock,
@@ -27,7 +42,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-white">
+    <section ref={sectionRef} id="benefits" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -39,11 +54,16 @@ const BenefitsSection = () => {
             </p>
           </div>
 
+          {/* Cards de benefício com animação stagger */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon;
               return (
-                <div key={index} className="flex items-start space-x-6 p-6 rounded-2xl hover:bg-gray-50 transition-colors">
+                <div
+                  key={index}
+                  ref={cardRefs[index]}
+                  className="flex items-start space-x-6 p-6 rounded-2xl hover:bg-gray-50 transition-colors"
+                >
                   <div className="w-16 h-16 bg-gradient-to-br from-vexio-orange to-vexio-orange-light rounded-2xl flex items-center justify-center flex-shrink-0">
                     <IconComponent className="h-8 w-8 text-white" />
                   </div>
@@ -60,7 +80,8 @@ const BenefitsSection = () => {
             })}
           </div>
 
-          <div className="bg-gradient-to-r from-vexio-orange to-vexio-orange-light rounded-3xl p-8 md:p-12 text-center">
+          {/* CTA final com fade-in */}
+          <div ref={ctaRef} className="bg-gradient-to-r from-vexio-orange to-vexio-orange-light rounded-3xl p-8 md:p-12 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Veja sua clínica crescer com IA
             </h3>

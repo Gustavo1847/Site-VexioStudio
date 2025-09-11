@@ -8,9 +8,17 @@ import PricingSection from "@/components/PricingSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
+import { useRef } from "react";
+import { useGsapFadeIn } from "@/hooks/useGsapAnimations";
+
 const Index = () => {
+  // Ref para animação da página
+  const pageRef = useRef<HTMLDivElement>(null);
+  // Fade-in suave na página principal
+  useGsapFadeIn(pageRef, { duration: 1.2, delay: 0.1 });
+
   return (
-    <div className="min-h-screen">
+    <div ref={pageRef} className="min-h-screen">
       <Header />
       <HeroSection />
       <ServicesSection />

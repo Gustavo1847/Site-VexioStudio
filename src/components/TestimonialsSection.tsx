@@ -1,9 +1,26 @@
 /** 05 */
 
+
+import { useRef } from "react";
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useGsapFadeIn, useGsapStaggerFadeIn, useGsapParallax } from "@/hooks/useGsapAnimations";
 
 const TestimonialsSection = () => {
+  // Refs para animação
+  const sectionRef = useRef<HTMLElement>(null);
+  const titleRef = useRef<HTMLDivElement>(null);
+  const cardRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
+
+  // Fade-in na section
+  useGsapFadeIn(sectionRef, { duration: 1, delay: 0.1 });
+  // Fade-in no título e parágrafo
+  useGsapFadeIn(titleRef, { duration: 1, delay: 0.3 });
+  // Stagger nos cards de depoimento
+  useGsapStaggerFadeIn(cardRefs, { duration: 0.7, delay: 0.5 });
+  // Parallax sutil nos cards
+  cardRefs.forEach(ref => useGsapParallax(ref, 0.15));
+
   const testimonials = [
     {
       name: "Dr. Laudenice Lucena",
@@ -29,9 +46,10 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section ref={sectionRef} className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        {/* Título e parágrafo animados */}
+        <div ref={titleRef} className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             O que nossos clientes dizem
           </h2>
@@ -40,24 +58,26 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
+        {/* Cards de depoimento com animação stagger e parallax */}
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
+            <Card
+              key={index}
+              ref={cardRefs[index]}
+              className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white"
+            >
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Quote className="h-8 w-8 text-vexio-orange mb-4" />
                 </div>
-                
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
-
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   "{testimonial.content}"
                 </p>
-
                 <div className="flex items-center">
                   <img 
                     src={testimonial.image} 

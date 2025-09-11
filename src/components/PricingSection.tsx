@@ -1,11 +1,25 @@
 /** 06 */
 
+
+import { useRef } from "react";
 import { Check, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { link } from "fs";
+import { useGsapFadeIn, useGsapStaggerFadeIn } from "@/hooks/useGsapAnimations";
 
 const PricingSection = () => {
+  // Refs para animação
+  const sectionRef = useRef<HTMLElement>(null);
+  const titleRef = useRef<HTMLDivElement>(null);
+  const cardRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
+
+  // Fade-in na section
+  useGsapFadeIn(sectionRef, { duration: 1, delay: 0.1 });
+  // Fade-in no título e parágrafo
+  useGsapFadeIn(titleRef, { duration: 1, delay: 0.3 });
+  // Stagger nos cards de plano
+  useGsapStaggerFadeIn(cardRefs, { duration: 0.7, delay: 0.5 });
+
   const plans = [
     {
       name: "Básico",
@@ -58,9 +72,10 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="py-10 bg-white">
+    <section ref={sectionRef} id="pricing" className="py-10 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-14">
+        {/* Título e parágrafo animados */}
+        <div ref={titleRef} className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Planos que cabem no seu orçamento
           </h2>
@@ -69,9 +84,14 @@ const PricingSection = () => {
           </p>
         </div>
 
+        {/* Cards de plano com animação stagger */}
         <div className="grid px-6 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
-            <Card key={index} className={`relative ${plan.isPopular ? 'border-vexio-orange border-2 shadow-xl scale-105' : 'border-gray-200'} hover:shadow-xl transition-all duration-300`}>
+            <Card
+              key={index}
+              ref={cardRefs[index]}
+              className={`relative ${plan.isPopular ? 'border-vexio-orange border-2 shadow-xl scale-105' : 'border-gray-200'} hover:shadow-xl transition-all duration-300`}
+            >
               {plan.isPopular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-vexio-orange text-white px-6 py-2 rounded-full text-sm font-semibold flex items-center">
@@ -81,7 +101,6 @@ const PricingSection = () => {
                   </div>
                 </div>
               )}
-              
               <CardHeader className="text-center pb-4">
                 <h3 className="text-2xl font-bold text-gray-900">{plan.name}</h3>
                 <p className="text-gray-600 mb-4">{plan.description}</p>
@@ -96,7 +115,6 @@ const PricingSection = () => {
                   )}
                 </div>
               </CardHeader>
-              
               <CardContent className="pt-0">
                 <ul className="space-y-2 mb-4">
                   {plan.features.map((feature, featureIndex) => (
@@ -105,7 +123,6 @@ const PricingSection = () => {
                       <span className="text-gray-700">{feature}</span>
                     </li>
                   ))}
-
                   {/* Renderizar os bônus separados */}
                   {plan.bonus && plan.bonus.length > 0 && (
                     <>
@@ -129,7 +146,6 @@ const PricingSection = () => {
                     </>
                   )}
                 </ul>
-                
                 <Button 
                   onClick={() => window.open(plan.link, '_blank')}
                   className={`w-full py-3 ${plan.isPopular 

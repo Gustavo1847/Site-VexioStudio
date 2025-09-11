@@ -1,23 +1,45 @@
 /** 07 */
 
+
+import { useRef } from "react";
 import { MessageCircle, Instagram, Mail, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useGsapFadeIn, useGsapStaggerFadeIn } from "@/hooks/useGsapAnimations";
 
 const ContactSection = () => {
+  // Refs para animação
+  const sectionRef = useRef<HTMLElement>(null);
+  const titleRef = useRef<HTMLDivElement>(null);
+  const cardRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
+  const ctaRef = useRef<HTMLDivElement>(null);
+
+  // Fade-in na section
+  useGsapFadeIn(sectionRef, { duration: 1, delay: 0.1 });
+  // Fade-in no título e parágrafo
+  useGsapFadeIn(titleRef, { duration: 1, delay: 0.3 });
+  // Stagger nos cards de contato
+  useGsapStaggerFadeIn(cardRefs, { duration: 0.7, delay: 0.5 });
+  // Fade-in no CTA final
+  useGsapFadeIn(ctaRef, { duration: 1, delay: 0.8 });
+
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-vexio-orange to-vexio-orange-light">
+    <section ref={sectionRef} id="contact" className="py-20 bg-gradient-to-br from-vexio-orange to-vexio-orange-light">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Pronto para automatizar sua clínica?
-          </h2>
-          <p className="text-xl text-orange-100 mb-12 max-w-2xl mx-auto">
-            Fale agora com nossa IA e descubra como podemos transformar seu atendimento em apenas 24 horas
-          </p>
+          {/* Título e parágrafo animados */}
+          <div ref={titleRef}>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Pronto para automatizar sua clínica?
+            </h2>
+            <p className="text-xl text-orange-100 mb-12 max-w-2xl mx-auto">
+              Fale agora com nossa IA e descubra como podemos transformar seu atendimento em apenas 24 horas
+            </p>
+          </div>
 
+          {/* Cards de contato com animação stagger */}
           <div className="bg-white rounded-3xl p-8 shadow-2xl mb-12">
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
+              <div ref={cardRefs[0]} className="text-center">
                 <div className="w-16 h-16 bg-vexio-orange rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <MessageCircle className="h-8 w-8 text-white" />
                 </div>
@@ -31,7 +53,7 @@ const ContactSection = () => {
                 </Button>
               </div>
 
-              <div className="text-center">
+              <div ref={cardRefs[1]} className="text-center">
                 <div className="w-16 h-16 bg-vexio-orange rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Instagram className="h-8 w-8 text-white" />
                 </div>
@@ -46,7 +68,7 @@ const ContactSection = () => {
                 </Button>
               </div>
 
-              <div className="text-center">
+              <div ref={cardRefs[2]} className="text-center">
                 <div className="w-16 h-16 bg-vexio-orange rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Mail className="h-8 w-8 text-white" />
                 </div>
@@ -63,7 +85,8 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <div className="text-center">
+          {/* CTA final com fade-in */}
+          <div ref={ctaRef} className="text-center">
             <Button 
               size="lg"
               onClick={() => window.open('https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20falar%20com%20a%20IA%21', '_blank')}
