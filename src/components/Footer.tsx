@@ -26,7 +26,7 @@ const Footer = () => {
             Simplificando e automatizando processos com inteligência artificial para clínicas médicas e odontológicas.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-sm text-gray-400 mb-8">
-            <div>WhatsApp: <a href="https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%21">(83) 98221-0377</a></div>
+            <div>WhatsApp: <a href="https://wa.me/5583986222218?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%21">(83) 98221-0377</a></div>
             <div>Instagram: <a href="https://instagram.com/studiovexio">@studiovexio</a></div>
             <div>E-mail: <a href="mailto:contato@vexiostudio.com.br">contato@vexiostudio.com.br</a></div>
           </div>

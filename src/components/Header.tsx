@@ -60,7 +60,7 @@ const Header = () => {
             <button ref={menuItemRefs[5]} onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-vexio-orange transition-colors">Contato</button>
           </nav>
           <Button 
-            onClick={() => window.open('https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20e%20quero%20testar%20agora%21', '_blank')}
+            onClick={() => window.open('https://bot.vexio.app.br/demonstracao', '_blank')}
             className="hidden md:inline-flex bg-vexio-orange hover:bg-vexio-orange-dark text-white"
           >
             Testar Agora

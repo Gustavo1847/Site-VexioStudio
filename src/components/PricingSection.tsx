@@ -25,7 +25,7 @@ const PricingSection = () => {
       name: "Básico",
       price: "300",
       description: "Automação prática e Econômica.",
-      link: "https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20B%C3%A1sico.",
+      link: "https://wa.me/5583986222218?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20B%C3%A1sico.",
       features: [
         "Ideal até 2 profissionais",
         "IA no WhatsApp 24/7",
@@ -41,7 +41,7 @@ const PricingSection = () => {
       name: "Profissional",
       price: "600",
       description: "Integrações avançadas e Atendimento otimizado.",
-      link: "https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Profissional.",
+      link: "https://wa.me/5583986222218?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Profissional.",
       features: [
         "Tudo do plano Starter",
         "Site institucional",
@@ -59,7 +59,7 @@ const PricingSection = () => {
       name: "Enterprise",
       price: "Sob consulta",
       description: "Solução completa e personalizada",
-      link: "https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Enterprise.",
+      link: "https://wa.me/5583986222218?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Enterprise.",
       features: [
         "Mensagens ilimitadas",
         "ERP completo para clínicas*",

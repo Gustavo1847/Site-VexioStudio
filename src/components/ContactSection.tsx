@@ -44,9 +44,9 @@ const ContactSection = () => {
                   <MessageCircle className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
-                <p className="text-gray-600 mb-4">(83) 98221-0377</p>
+                <p className="text-gray-600 mb-4">(83) 98622-2218</p>
                 <Button 
-                  onClick={() => window.open('https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20automatizar%20meu%20neg%C3%B3cio%21', '_blank')}
+                  onClick={() => window.open('https://wa.me/5583986222218?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20automatizar%20minha%20cl%C3%ADnica%21', '_blank')}
                   className="bg-green-500 hover:bg-green-600 text-white"
                 >
                   Chamar agora
@@ -89,7 +89,7 @@ const ContactSection = () => {
           <div ref={ctaRef} className="text-center">
             <Button 
               size="lg"
-              onClick={() => window.open('https://wa.me/5583982210377?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20falar%20com%20a%20IA%21', '_blank')}
+              onClick={() => window.open('https://bot.vexio.app.br/demonstracao', '_blank')}
               className="bg-white text-vexio-orange hover:bg-gray-50 px-12 py-4 text-xl font-bold shadow-xl"
             >
               <Bot className="mr-3 h-6 w-6" />
