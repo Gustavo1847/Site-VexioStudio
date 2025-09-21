@@ -29,7 +29,7 @@ const HeroSection = () => {
 
   return (
     <section ref={sectionRef} id="home" className="min-h-screen flex items-center bg-gradient-to-br from-white via-orange-50 to-white pt-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" style={{minHeight: "fit-content"}}>
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Texto principal animado */}
@@ -85,8 +85,8 @@ const HeroSection = () => {
             </div>
 
             {/* Card de chat com parallax */}
-            <div className="relative lg:ml-12">
-              <div ref={cardRef} className="relative">
+            <div className="relative lg:ml-12" style={{minHeight: "fit-content"}}>
+              <div ref={cardRef} className="relative correcaoM1">
                 <div className="absolute inset-0 bg-gradient-to-r from-vexio-orange to-vexio-orange-light rounded-3xl rotate-6 opacity-20"></div>
                 <div className="relative bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
                   <div className="flex items-center mb-6">

@@ -94,6 +94,15 @@ All colors MUST be HSL.
   }
 }
 
+@media (max-width: 1000px)
+{
+  .correcaoM1 {
+    transform: translate(0) !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
