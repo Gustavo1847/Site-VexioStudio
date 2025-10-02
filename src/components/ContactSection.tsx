@@ -44,9 +44,9 @@ const ContactSection = () => {
                   <MessageCircle className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
-                <p className="text-gray-600 mb-4">(83) 98622-2218</p>
+                <p className="text-gray-600 mb-4">(83) 98714-6549</p>
                 <Button 
-                  onClick={() => window.open('https://wa.me/5583986222218?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20automatizar%20minha%20cl%C3%ADnica%21', '_blank')}
+                  onClick={() => window.open('https://wa.me/5583987146549?text=Ol%C3%A1%2C%20tudo%20bom%3F%0AVim%20do%20site%2C%20gostaria%20de%20automatizar%20minha%20cl%C3%ADnica%21', '_blank')}
                   className="bg-green-500 hover:bg-green-600 text-white"
                 >
                   Chamar agora
