@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 
 import { useRef } from "react";
 import { useGsapFadeIn } from "@/hooks/useGsapAnimations";
+import { Analytics } from "@vercel/analytics/next";
 
 const Index = () => {
   // Ref para animação da página

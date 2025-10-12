@@ -18,7 +18,6 @@ const App = () => (
       <BrowserRouter>
         <ScrollToHash />
         <Routes>
-          <Analytics />
           <Route path="/" element={<Index />} />
           {/* Adicione todas as rotas personalizadas acima da rota Catch-All "*" */}
           <Route path="*" element={<NotFound />} />
