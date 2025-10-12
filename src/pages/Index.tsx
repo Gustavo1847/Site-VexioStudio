@@ -28,6 +28,7 @@ const Index = () => {
       <PricingSection />
       <ContactSection />
       <Footer />
+      <Analytics />
     </div>
   );
 };
