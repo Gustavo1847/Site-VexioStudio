@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToHash from "./ScrollToHash";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import { Analytics } from "@vercel/analytics/next";
 
 const queryClient = new QueryClient();
 
