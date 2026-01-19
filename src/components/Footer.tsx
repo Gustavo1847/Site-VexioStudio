@@ -16,9 +16,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <div className="flex items-center justify-center mb-4">
-            <img 
-              src="https://www.vexiostudio.com.br/logo-laranja-preto.png" 
-              alt="Vexio Studio" 
+            <img
+              src="https://www.vexiostudio.com.br/logo-laranja-preto.png"
+              alt="Vexio Studio"
               className="h-8 w-auto brightness-0 invert"
             />
           </div>
@@ -30,8 +30,12 @@ const Footer = () => {
             <div>Instagram: <a href="https://instagram.com/studiovexio">@studiovexio</a></div>
             <div>E-mail: <a href="mailto:contato@vexiostudio.com.br">contato@vexiostudio.com.br</a></div>
           </div>
-          <div className="border-t border-gray-800 pt-8">
-            <p className="text-gray-500 text-sm flex items-center justify-center">
+          <div className="border-t border-gray-800 pt-8 flex flex-col items-center">
+            <div className="flex space-x-6 text-sm text-gray-500 mb-2">
+              <a href="/politica-de-privacidade" className="hover:text-vexio-orange transition-colors">Política de Privacidade</a>
+              <a href="/termos-de-uso" className="hover:text-vexio-orange transition-colors">Termos de Uso</a>
+            </div>
+            <p className="text-gray-500 text-sm text-center mb-4">
               Desenvolvido por Vexio Studio • © 2024 Todos os direitos reservados
               <br />
               Cnpj: 61.322.556/0001-99
@@ -39,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer> 
+    </footer>
   );
 };
 

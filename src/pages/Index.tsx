@@ -18,16 +18,18 @@ const Index = () => {
   useGsapFadeIn(pageRef, { duration: 1.2, delay: 0.1 });
 
   return (
-    <div ref={pageRef} className="min-h-screen">
+    <>
       <Header />
-      <HeroSection />
-      <ServicesSection />
-      <BenefitsSection />
-      <TestimonialsSection />
-      <PricingSection />
-      <ContactSection />
-      <Footer />
-    </div>
+      <div ref={pageRef} className="min-h-screen">
+        <HeroSection />
+        <ServicesSection />
+        <BenefitsSection />
+        <TestimonialsSection />
+        <PricingSection />
+        <ContactSection />
+        <Footer />
+      </div>
+    </>
   );
 };
 
